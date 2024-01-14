@@ -1,8 +1,8 @@
 package computer;
 
 public class RAM {
-    String name;
-    int value;
+    public String name;
+    public int value;
 
     public RAM(int value, String name) {
         this.value = value;
@@ -10,8 +10,8 @@ public class RAM {
 
     }
     public RAM() {
-        this.value = 200;
-        this.name = "Intel Cyclope";
+//        this.value = 200;
+//        this.name = "Intel Cyclope";
 
     }
     public void showInfo() {

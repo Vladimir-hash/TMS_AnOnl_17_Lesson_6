@@ -1,5 +1,5 @@
 package computer;
-import java.lang.String;
+
 /*
 Создать класс для описания компьютера, а в этом классе должны быть поля: стоимость,
 модель(строковый типа) RAM и HDD.
@@ -20,22 +20,19 @@ import java.lang.String;
 
 public class Computer {
     private String model;
-    int price;
+    private int price;
 
-    HDD hdd;
-    RAM ram;
-    public Computer( String model,int price) {
-        this.price = price;
-        this.model = model;
-
-    }
+    private HDD hdd;
+    private RAM ram;
     public Computer(String model, int price,RAM ram, HDD hdd) {
         this.model = model;
         this.price = price;
         this.ram = ram;
         this.hdd = hdd;
     }
-
+    public Computer( String model,int price) {
+        this(model,price,new RAM(),new HDD());
+    }
 
     public void showInfo() {
         System.out.println("Name " + hdd.name + " Capacity " + hdd.memory + " Type " + hdd.type);

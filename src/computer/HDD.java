@@ -1,9 +1,9 @@
 package computer;
 
 public class HDD {
-    String name;
-    int memory;
-    String type;
+    public String name;
+    public int memory;
+    public String type;
 
     public HDD(int value, String name, String type) {
         this.memory = value;
@@ -12,8 +12,8 @@ public class HDD {
 
     }
     public HDD() {
-        this.memory = 100;
-        this.name = "Pentium";
+//        this.memory = 100;
+//        this.name = "Pentium";
 
     }
     public void showInfo() {
